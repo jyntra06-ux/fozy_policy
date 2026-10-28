@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#facc15">
+  <meta name="description" content="Privacy Policy for Fozy: Random Video Call & Chat.">
+  <title>Privacy Policy | Fozy: Random Video Call &amp; Chat</title>
+  <style>
+    :root {
+      --yellow: #facc15;
+      --yellow-deep: #eab308;
+      --yellow-pale: #fef9c3;
+      --ink: #29220b;
+      --muted: #655b3b;
+      --paper: #fffef8;
+      --line: #f0df91;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #fffbea;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+    a { color: #805b00; text-underline-offset: 3px; }
+    a:hover { color: #4b3700; }
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 64px 20px 76px;
+      background: linear-gradient(135deg, #fde047 0%, #facc15 48%, #eab308 100%);
+      border-radius: 0 0 36px 36px;
+    }
+    .hero::before, .hero::after {
+      content: "";
+      position: absolute;
+      border: 1px solid rgba(255,255,255,.35);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .hero::before { width: 310px; height: 310px; top: -190px; right: -55px; }
+    .hero::after { width: 220px; height: 220px; bottom: -160px; left: -40px; }
+    .hero-inner { width: min(900px, 100%); margin: 0 auto; position: relative; z-index: 1; }
+    .brand {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 8px 13px; border-radius: 999px;
+      background: rgba(255,255,255,.62); border: 1px solid rgba(255,255,255,.6);
+      font-size: .88rem; font-weight: 750; letter-spacing: .02em;
+    }
+    .brand-mark {
+      display: grid; place-items: center; width: 28px; height: 28px;
+      border-radius: 9px; background: var(--ink); color: var(--yellow);
+      font-size: .9rem; font-weight: 900;
+    }
+    h1 { margin: 24px 0 10px; max-width: 760px; font-size: clamp(2.1rem, 5vw, 3.6rem); line-height: 1.08; letter-spacing: -.045em; }
+    .hero p { max-width: 690px; margin: 0; color: #493b0a; font-size: 1.08rem; }
+    .updated { display: inline-block; margin-top: 22px; padding: 7px 12px; background: rgba(255,255,255,.55); border-radius: 9px; font-size: .88rem; font-weight: 650; }
+    .layout { width: min(1100px, calc(100% - 32px)); margin: -28px auto 56px; position: relative; display: grid; grid-template-columns: 245px minmax(0, 1fr); gap: 24px; align-items: start; }
+    .toc, .policy, .contact {
+      background: var(--paper); border: 1px solid var(--line); border-radius: 20px;
+      box-shadow: 0 12px 35px rgba(112, 83, 0, .07);
+    }
+    .toc { padding: 20px; position: sticky; top: 18px; }
+    .toc h2 { margin: 0 0 12px; font-size: .95rem; letter-spacing: .04em; text-transform: uppercase; }
+    .toc ol { padding-left: 20px; margin: 0; }
+    .toc li { margin: 5px 0; font-size: .9rem; }
+    .toc a { text-decoration: none; color: var(--muted); }
+    .toc a:hover { color: #805b00; text-decoration: underline; }
+    .content { min-width: 0; }
+    .policy { padding: clamp(22px, 4vw, 42px); }
+    .intro-note { padding: 16px 18px; margin: 0 0 28px; background: var(--yellow-pale); border-left: 4px solid var(--yellow-deep); border-radius: 10px; }
+    section { padding: 22px 0; border-bottom: 1px solid #f2e9c6; scroll-margin-top: 20px; }
+    section:first-of-type { padding-top: 0; }
+    section:last-of-type { border-bottom: 0; padding-bottom: 0; }
+    h2 { margin: 0 0 10px; font-size: 1.28rem; line-height: 1.35; letter-spacing: -.02em; }
+    h3 { margin: 18px 0 6px; font-size: 1rem; }
+    p { margin: 8px 0 12px; }
+    ul { padding-left: 23px; margin: 8px 0 14px; }
+    li { padding-left: 3px; margin: 5px 0; }
+    .contact { margin-top: 20px; padding: 24px; background: #29220b; color: #fff9d8; border-color: #29220b; }
+    .contact h2 { color: var(--yellow); }
+    .contact a { color: #fde047; }
+    .contact p { margin-bottom: 0; }
+    footer { padding: 0 16px 32px; text-align: center; color: #766a42; font-size: .86rem; }
+    @media (max-width: 800px) {
+      .layout { grid-template-columns: 1fr; margin-top: -22px; }
+      .toc { position: static; }
+      .toc ol { columns: 2; column-gap: 22px; }
+      .hero { padding-top: 48px; border-radius: 0 0 26px 26px; }
+    }
+    @media (max-width: 480px) {
+      .toc ol { columns: 1; }
+      .layout { width: min(100% - 20px, 1100px); }
+      .policy { padding: 21px 18px; }
+    }
+    @media print {
+      body { background: white; }
+      .hero { padding: 25px 20px; border-radius: 0; }
+      .layout { display: block; width: 100%; margin: 20px auto; }
+      .toc { display: none; }
+      .policy, .contact { box-shadow: none; break-inside: avoid; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="brand"><span class="brand-mark">F</span> FOZY · PRIVACY CENTER</div>
+      <h1>Privacy Policy</h1>
+      <p>Learn how Fozy: Random Video Call &amp; Chat handles information and device permissions while you use the app.</p>
+      <span class="updated">Last updated: October 28, 2026</span>
+    </div>
+  </header>
+
+  <main class="layout">
+    <nav class="toc" aria-label="Privacy Policy contents">
+      <h2>On this page</h2>
+      <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#information">Information we may process</a></li>
+        <li><a href="#use">How information is used</a></li>
+        <li><a href="#camera">Camera and microphone</a></li>
+        <li><a href="#overlay">Display over other apps</a></li>
+        <li><a href="#permissions">Device permissions</a></li>
+        <li><a href="#third-party">Third-party services</a></li>
+        <li><a href="#sharing">Data sharing</a></li>
+        <li><a href="#retention">Retention and deletion</a></li>
+        <li><a href="#security">Data security</a></li>
+        <li><a href="#children">Children’s privacy</a></li>
+        <li><a href="#rights">Your choices and rights</a></li>
+        <li><a href="#changes">Policy changes</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ol>
+    </nav>
+
+    <div class="content">
+      <article class="policy">
+        <div class="intro-note">
+          <strong>About Fozy:</strong> Fozy is intended as an entertainment application. Despite its name and interface, it does not provide real phone calls, online meetings, or real-time communication between users.
+        </div>
+
+        <section id="introduction">
+          <h2>1. Introduction</h2>
+          <p>Welcome to Fozy: Random Video Call &amp; Chat (“Fozy,” “we,” “our,” or “us”). This Privacy Policy explains how information may be accessed, processed, used, and protected when you use our application.</p>
+          <p>By using Fozy, you acknowledge that you have had the opportunity to review this Privacy Policy.</p>
+        </section>
+
+        <section id="information">
+          <h2>2. Information We May Process</h2>
+          <h3>Device and technical information</h3>
+          <p>Depending on app configuration and use, technical information such as device type, operating system version, app version, diagnostic information, and general usage information may be processed to maintain functionality and troubleshoot errors.</p>
+          <h3>Camera and microphone</h3>
+          <p>Fozy requests camera and microphone permissions for applicable app features. Access depends on the feature being used and your device settings. Fozy does not provide real calls or online meetings between users.</p>
+          <h3>Phone state information</h3>
+          <p>The app may access phone state information to support relevant functionality. The Android manifest supplied for this policy update does not declare SMS, contacts, or location permissions.</p>
+          <h3>Network, diagnostics, and usage</h3>
+          <p>The app uses internet connectivity for applicable online services, configuration, and other functions. If enabled, analytics and crash-reporting services may process usage events, technical identifiers, and diagnostic information to help improve stability.</p>
+        </section>
+
+        <section id="use">
+          <h2>3. How We Use Information</h2>
+          <p>Information may be used to:</p>
+          <ul>
+            <li>Operate and maintain application functionality.</li>
+            <li>Provide the entertainment experience offered by the app.</li>
+            <li>Support applicable camera and microphone features.</li>
+            <li>Diagnose crashes and improve app stability.</li>
+            <li>Maintain security and prevent misuse.</li>
+            <li>Manage app configuration and service reliability.</li>
+            <li>Comply with applicable legal obligations.</li>
+          </ul>
+          <p>Fozy is not used to provide real phone calls, online meetings, or live user-to-user communication.</p>
+        </section>
+
+        <section id="camera">
+          <h2>4. Camera and Microphone Permissions</h2>
+          <p>Camera and microphone are sensitive device permissions that you can manage through Android settings. Granting these permissions does not mean that Fozy provides a real call or meeting service.</p>
+          <p>Media processing depends on the feature being used. We do not claim that camera or microphone data is never transmitted or stored; any handling must match the actual implementation of the released app.</p>
+        </section>
+
+        <section id="overlay">
+          <h2>5. Display Over Other Apps</h2>
+          <p>Fozy may request permission to display content over other applications for applicable features. This permission is controlled through Android system settings and does not, by itself, grant access to other apps’ private information.</p>
+          <p>You can revoke this permission in your device settings. Features that depend on it may then be unavailable.</p>
+        </section>
+
+        <section id="permissions">
+          <h2>6. Phone State, Notifications, and Device Permissions</h2>
+          <p>The app may request phone state access, notification permission, and other Android permissions needed for its declared functionality. You can manage or revoke permissions through Android settings. Some features may not work correctly if their required permissions are denied.</p>
+        </section>
+
+        <section id="third-party">
+          <h2>7. Third-Party Services</h2>
+          <p>The project configuration supplied for this policy includes Google Firebase services and the Facebook SDK. Depending on which services are enabled and how they are configured, providers may process technical information, diagnostics, messaging tokens, installation attribution information, or other data needed to provide their services.</p>
+          <p>Third-party providers handle information under their own policies:</p>
+          <ul>
+            <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+            <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy and Security</a></li>
+            <li><a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener noreferrer">Meta Privacy Policy</a></li>
+          </ul>
+          <p>The exact information processed depends on SDK configuration and the services enabled in the released application.</p>
+        </section>
+
+        <section id="sharing">
+          <h2>8. Data Sharing</h2>
+          <p>We do not sell personal information as a business practice. Information may be processed by service providers supporting app functionality, diagnostics, analytics, security, or infrastructure. Information may also be disclosed when required by law or when necessary to protect users, the public, or the application.</p>
+        </section>
+
+        <section id="retention">
+          <h2>9. Data Retention and Deletion</h2>
+          <p>Information is retained only for as long as reasonably necessary for its purpose, subject to applicable legal requirements and the retention practices of relevant service providers. Diagnostic records and service-related identifiers may be retained according to the configuration and retention policies of those services.</p>
+          <p>For questions about personal information or applicable deletion requests, contact us using the details below.</p>
+        </section>
+
+        <section id="security">
+          <h2>10. Data Security</h2>
+          <p>We use reasonable technical and organizational measures intended to protect information against unauthorized access, alteration, disclosure, or destruction. However, no electronic storage system or internet transmission can be guaranteed completely secure.</p>
+        </section>
+
+        <section id="children">
+          <h2>11. Children’s Privacy</h2>
+          <p>Fozy is not intended to collect personal information from children in violation of applicable privacy laws. If you believe a child has provided personal information inappropriately, contact us so we can review the matter and take appropriate action where required.</p>
+        </section>
+
+        <section id="rights">
+          <h2>12. Your Choices and Rights</h2>
+          <p>Depending on your location and applicable law, you may have rights to request access to, correction of, or deletion of certain personal information. You can also manage Android permissions, disable notifications, and restrict device-level access through your device settings.</p>
+          <p>To submit a privacy-related request, contact us using the email address below.</p>
+        </section>
+
+        <section id="changes">
+          <h2>13. Changes to This Privacy Policy</h2>
+          <p>We may update this Privacy Policy when the app, its features, service providers, or applicable legal requirements change. The revised policy will display an updated “Last updated” date. We encourage users to review this page periodically.</p>
+        </section>
+      </article>
+
+      <section class="contact" id="contact">
+        <h2>14. Contact Us</h2>
+        <p>If you have questions, concerns, or requests regarding this Privacy Policy, contact us:</p>
+        <p><strong>App:</strong> Fozy: Random Video Call &amp; Chat<br>
+        <strong>Email:</strong> <a href="mailto:jyntra06@gmail.com">jyntra06@gmail.com</a></p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 Fozy: Random Video Call &amp; Chat · Privacy Policy
+  </footer>
+</body>
+</html>
